@@ -35,6 +35,7 @@ public class ElementRestService {
     @POST
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
+    @RequiresRoles("ADMIN")
     public String push(Element element) {
         Response.ResponseBuilder builder = null;
 
@@ -74,20 +75,7 @@ public class ElementRestService {
     }
 
 
-    /**
-     * <p>
-     * Validates the given Member variable and throws validation exceptions based on the type of error. If the error is standard
-     * bean validation errors then it will throw a ConstraintValidationException with the set of the constraints violated.
-     * </p>
-     * <p>
-     * If the error is caused because an existing member with the same email is registered it throws a regular validation
-     * exception so that it can be interpreted separately.
-     * </p>
-     *
-     * @param element Element to be validated
-     * @throws ConstraintViolationException If Bean Validation errors exist
-     * @throws ValidationException          If member with the same email already exists
-     */
+
     private void validateElement(Element element) throws ConstraintViolationException, ValidationException {
         // Create a bean validator and check for issues.
         Set<ConstraintViolation<Element>> violations = validator.validate(element);
@@ -97,13 +85,6 @@ public class ElementRestService {
         }
     }
 
-    /**
-     * Creates a JAX-RS "Bad Request" response including a map of all violation fields, and their message. This can then be used
-     * by clients to show violations.
-     *
-     * @param violations A set of violations that needs to be reported
-     * @return JAX-RS response containing all violations
-     */
     private Response.ResponseBuilder createViolationResponse(Set<ConstraintViolation<?>> violations) {
         log.fine("Validation completed. violations found: " + violations.size());
 

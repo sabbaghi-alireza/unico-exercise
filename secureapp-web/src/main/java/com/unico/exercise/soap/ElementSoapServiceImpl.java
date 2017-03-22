@@ -32,14 +32,14 @@ public class ElementSoapServiceImpl implements ElementSoapService {
     @Inject
     private ElementService service;
 
-
-
     @Override
+    @CheckUserRole("ADMIN")
     public Integer gcd() {
         return service.computeGCD();
     }
 
     @Override
+    @CheckUserRole("ADMIN")
     public List<Integer> gcdList() {
         return service.getGCDList();
     }
