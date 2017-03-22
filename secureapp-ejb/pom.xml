@@ -80,6 +80,11 @@
             <scope>provided</scope>
         </dependency>
 
+        <dependency>
+            <groupId>de.svenkubiak</groupId>
+            <artifactId>jBCrypt</artifactId>
+            <version>0.4</version>
+        </dependency>
 
         <!-- Test scope dependencies -->
         <dependency>
@@ -89,7 +94,7 @@
         </dependency>
 
         <!-- Optional, but highly recommended -->
-        <!-- Arquillian allows you to test enterprise code such as EJBs and 
+        <!-- Arquillian allows you to test enterprise code such as EJBs and
             Transactional(JTA) JPA from JUnit/TestNG -->
         <dependency>
             <groupId>org.jboss.arquillian.junit</groupId>
@@ -102,14 +107,6 @@
             <artifactId>arquillian-protocol-servlet</artifactId>
             <scope>test</scope>
         </dependency>
-
-        <!-- https://mvnrepository.com/artifact/org.apache.shiro/shiro-core -->
-        <dependency>
-            <groupId>org.apache.shiro</groupId>
-            <artifactId>shiro-core</artifactId>
-            <version>1.4.0-RC2</version>
-        </dependency>
-
 
     </dependencies>
 

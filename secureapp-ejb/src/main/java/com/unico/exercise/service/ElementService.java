@@ -2,7 +2,6 @@ package com.unico.exercise.service;
 
 import com.unico.exercise.data.ElementDAO;
 import com.unico.exercise.model.Element;
-import com.unico.exercise.security.SecurityContext;
 import com.unico.exercise.util.MathUtil;
 
 import javax.annotation.Resource;
@@ -22,16 +21,12 @@ public class ElementService {
     @Inject
     private ElementDAO elementDAO;
 
-    @Inject
-    SecurityContext sc;
-
     public Long save(Element element) {
         element.setId(null);
         return elementDAO.save(element);
     }
 
     public List<Element> findAll() {
-//        System.out.println(sc.getPrincipal().toString());
         return elementDAO.findAll();
     }
 

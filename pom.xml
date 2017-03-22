@@ -47,11 +47,11 @@
 
         <!-- JBoss dependency versions -->
         
-        <version.wildfly.maven.plugin>1.0.2.Final</version.wildfly.maven.plugin>
+        <version.wildfly.maven.plugin>1.1.0.Final</version.wildfly.maven.plugin>
 
         <!-- Define the version of the JBoss BOMs we want to import to specify tested stacks. -->
-        <version.jboss.bom>8.2.1.Final</version.jboss.bom>
-        <version.wildfly>9.0.0.Alpha1</version.wildfly>
+        <version.jboss.bom>8.2.2.Final</version.jboss.bom>
+        <version.wildfly>10.1.0.Final</version.wildfly>
 
 
         <!-- other plugin versions -->
@@ -62,8 +62,8 @@
         <version.war.plugin>2.5</version.war.plugin>
 
         <!-- maven-compiler-plugin -->
-        <maven.compiler.target>1.7</maven.compiler.target>
-        <maven.compiler.source>1.7</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <maven.compiler.source>1.8</maven.compiler.source>
     </properties>
 
     <dependencyManagement>

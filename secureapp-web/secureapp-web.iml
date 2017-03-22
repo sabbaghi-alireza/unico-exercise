@@ -17,7 +17,7 @@
       </configuration>
     </facet>
   </component>
-  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_7" inherit-compiler-output="false">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8" inherit-compiler-output="false">
     <output url="file://$MODULE_DIR$/target/classes" />
     <output-test url="file://$MODULE_DIR$/target/test-classes" />
     <content url="file://$MODULE_DIR$">
@@ -29,73 +29,66 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="secureapp-ejb" scope="PROVIDED" />
-    <orderEntry type="library" name="Maven: org.apache.shiro:shiro-core:1.4.0-RC2" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.shiro:shiro-lang:1.4.0-RC2" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.shiro:shiro-cache:1.4.0-RC2" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.shiro:shiro-crypto-hash:1.4.0-RC2" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.shiro:shiro-crypto-core:1.4.0-RC2" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.shiro:shiro-crypto-cipher:1.4.0-RC2" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.shiro:shiro-config-core:1.4.0-RC2" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.shiro:shiro-config-ogdl:1.4.0-RC2" level="project" />
-    <orderEntry type="library" name="Maven: commons-beanutils:commons-beanutils:1.9.3" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.shiro:shiro-event:1.4.0-RC2" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.jboss.resteasy:jaxrs-api:3.0.10.Final" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.jboss.spec.javax.servlet:jboss-servlet-api_3.1_spec:1.0.0.Final" level="project" />
     <orderEntry type="library" name="Maven: org.jboss.spec.javax.xml.ws:jboss-jaxws-api_2.2_spec:2.0.2.Final" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.jboss.ws:jbossws-api:1.0.3.Final" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.jboss.ws.cxf:jbossws-cxf-factories:5.1.5.Final" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.jboss.ws.cxf:jbossws-cxf-server:5.1.5.Final" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.jboss.ws.cxf:jbossws-cxf-client:5.1.5.Final" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.jboss.ws:jbossws-common-tools:1.2.2.Final" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.jboss.ws.cxf:jbossws-cxf-factories:5.1.7.Final" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.jboss.ws.cxf:jbossws-cxf-server:5.1.7.Final" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.jboss.ws.cxf:jbossws-cxf-client:5.1.7.Final" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.jboss.ws:jbossws-common-tools:1.2.3.Final" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: gnu.getopt:java-getopt:1.0.13" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.jboss.ws.cxf:jbossws-cxf-transports-udp:5.1.5.Final" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.jboss.ws.cxf:jbossws-cxf-transports-undertow:5.1.5.Final" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.jboss.ws.cxf:jbossws-cxf-transports-udp:5.1.7.Final" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.jboss.ws.cxf:jbossws-cxf-transports-undertow:5.1.7.Final" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.jboss.ws.projects:jaxws-undertow-httpspi:1.0.1.Final" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: io.undertow:undertow-core:1.0.10.Final" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.jboss.xnio:xnio-api:3.2.0.Final" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.jboss.xnio:xnio-nio:3.2.0.Final" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.cxf:cxf-rt-transports-http-hc:3.1.6" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.cxf:cxf-rt-transports-http-hc:3.1.9" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.httpcomponents:httpcore-nio:4.4.4" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.httpcomponents:httpcore:4.4.4" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.httpcomponents:httpasyncclient:4.1.1" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.httpcomponents:httpclient:4.5.1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.httpcomponents:httpasyncclient:4.1.2" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.httpcomponents:httpclient:4.5.2" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.cxf:cxf-rt-wsdl:3.1.9" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: com.sun.xml.fastinfoset:FastInfoset:1.2.12" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: log4j:log4j:1.2.16" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.slf4j:slf4j-log4j12:1.7.15" level="project" />
+    <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.15" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.jboss.spec.javax.ejb:jboss-ejb-api_3.1_spec:1.0.2.Final" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.jboss.ws:jbossws-common:3.1.3.Final" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.jboss.ws:jbossws-common:3.1.4.Final" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: jboss.jaxbintros:jboss-jaxb-intros:1.0.2.GA" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: commons-logging:commons-logging:1.1.1" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.jboss.ws:jbossws-spi:3.1.2.Final" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.cxf:cxf-rt-bindings-soap:3.1.6" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.cxf:cxf-core:3.1.6" level="project" />
+    <orderEntry type="library" name="Maven: commons-beanutils:commons-beanutils:1.8.0" level="project" />
+    <orderEntry type="library" name="Maven: commons-logging:commons-logging:1.1.1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.jboss.ws:jbossws-spi:3.1.4.Final" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.cxf:cxf-rt-bindings-soap:3.1.9" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.cxf:cxf-core:3.1.9" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.ws.xmlschema:xmlschema-core:2.2.1" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.cxf:cxf-rt-wsdl:3.1.6" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.ow2.asm:asm:5.0.4" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.cxf:cxf-rt-databinding-jaxb:3.1.6" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.cxf:cxf-rt-bindings-object:3.1.6" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.cxf:cxf-rt-bindings-coloc:3.1.6" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.cxf:cxf-rt-frontend-jaxws:3.1.6" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.cxf:cxf-rt-databinding-jaxb:3.1.9" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.cxf:cxf-rt-bindings-object:3.1.9" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.cxf:cxf-rt-bindings-coloc:3.1.9" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.cxf:cxf-rt-frontend-jaxws:3.1.9" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: xml-resolver:xml-resolver:1.2" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.cxf:cxf-rt-bindings-xml:3.1.6" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.cxf:cxf-rt-frontend-simple:3.1.6" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.cxf:cxf-rt-ws-addr:3.1.6" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.cxf:cxf-rt-features-clustering:3.1.6" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.cxf:cxf-rt-management:3.1.6" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.cxf:cxf-rt-transports-http:3.1.6" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.cxf:cxf-rt-transports-jms:3.1.6" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.cxf:cxf-rt-transports-local:3.1.6" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.cxf:cxf-rt-ws-mex:3.1.6" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.cxf:cxf-rt-ws-rm:3.1.6" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.wss4j:wss4j-policy:2.1.5" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.cxf:cxf-rt-ws-policy:3.1.6" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.ow2.asm:asm:5.0.4" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.cxf:cxf-rt-bindings-xml:3.1.9" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.cxf:cxf-rt-frontend-simple:3.1.9" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.cxf:cxf-rt-ws-addr:3.1.9" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.cxf:cxf-rt-features-clustering:3.1.9" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.cxf:cxf-rt-management:3.1.9" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.cxf:cxf-rt-transports-http:3.1.9" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.cxf:cxf-rt-transports-jms:3.1.9" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.cxf:cxf-rt-transports-local:3.1.9" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.cxf:cxf-rt-ws-mex:3.1.9" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.cxf:cxf-rt-ws-rm:3.1.9" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.wss4j:wss4j-policy:2.1.8" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.cxf:cxf-rt-ws-policy:3.1.9" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: wsdl4j:wsdl4j:1.6.3" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.neethi:neethi:3.0.3" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.cxf:cxf-rt-ws-security:3.1.6" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.cxf:cxf-rt-security-saml:3.1.6" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.cxf:cxf-rt-security:3.1.6" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.wss4j:wss4j-ws-security-dom:2.1.5" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.wss4j:wss4j-ws-security-common:2.1.5" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.cxf:cxf-rt-ws-security:3.1.9" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.cxf:cxf-rt-security-saml:3.1.9" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.cxf:cxf-rt-security:3.1.9" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: net.sf.ehcache:ehcache:2.10.3" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.wss4j:wss4j-ws-security-dom:2.1.8" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.wss4j:wss4j-ws-security-common:2.1.8" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.opensaml:opensaml-saml-impl:3.1.1" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.opensaml:opensaml-profile-api:3.1.1" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.opensaml:opensaml-core:3.1.1" level="project" />
@@ -115,58 +108,99 @@
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.opensaml:opensaml-xacml-saml-impl:3.1.1" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.opensaml:opensaml-xacml-saml-api:3.1.1" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.jasypt:jasypt:1.9.2" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.wss4j:wss4j-ws-security-stax:2.1.5" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.wss4j:wss4j-bindings:2.1.5" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.wss4j:wss4j-ws-security-policy-stax:2.1.5" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.cxf:cxf-tools-java2ws:3.1.6" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.cxf:cxf-tools-common:3.1.6" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.cxf:cxf-rt-databinding-aegis:3.1.6" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.cxf:cxf-tools-wsdlto-core:3.1.6" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.cxf:cxf-tools-validator:3.1.6" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.cxf:cxf-tools-wsdlto-databinding-jaxb:3.1.6" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.cxf:cxf-tools-wsdlto-frontend-jaxws:3.1.6" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.cxf.services.sts:cxf-services-sts-core:3.1.6" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.cxf.services.ws-discovery:cxf-services-ws-discovery-api:3.1.6" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.wss4j:wss4j-ws-security-stax:2.1.8" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.wss4j:wss4j-bindings:2.1.8" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.wss4j:wss4j-ws-security-policy-stax:2.1.8" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.cxf:cxf-tools-java2ws:3.1.9" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.cxf:cxf-tools-common:3.1.9" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.cxf:cxf-rt-databinding-aegis:3.1.9" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.cxf:cxf-tools-wsdlto-core:3.1.9" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.cxf:cxf-tools-validator:3.1.9" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.cxf:cxf-tools-wsdlto-databinding-jaxb:3.1.9" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.cxf:cxf-tools-wsdlto-frontend-jaxws:3.1.9" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.cxf.services.sts:cxf-services-sts-core:3.1.9" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.cxf.services.ws-discovery:cxf-services-ws-discovery-api:3.1.9" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.cxf.xjcplugins:cxf-xjc-boolean:3.0.5" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.cxf.xjcplugins:cxf-xjc-bug986:3.0.5" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.cxf.xjcplugins:cxf-xjc-dv:3.0.5" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.cxf.xjcplugins:cxf-xjc-ts:3.0.5" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.cxf.xjc-utils:cxf-xjc-runtime:3.0.5" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.velocity:velocity:1.7" level="project" />
-    <orderEntry type="library" name="Maven: commons-collections:commons-collections:3.2.1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: commons-collections:commons-collections:3.2.1" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: commons-lang:commons-lang:2.6" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: javax.xml.stream:stax-api:1.0-2" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.santuario:xmlsec:2.0.6" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: commons-codec:commons-codec:1.10" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.santuario:xmlsec:2.0.8" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.codehaus.woodstox:woodstox-core-asl:4.4.1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: commons-codec:commons-codec:1.10" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.fasterxml.woodstox:woodstox-core:5.0.3" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.codehaus.woodstox:stax2-api:3.1.4" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: asm:asm:3.3.1" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: javax.jws:jsr181-api:1.0-MR1" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.glassfish.jaxb:jaxb-runtime:2.2.11.jbossorg-1" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.glassfish.jaxb:jaxb-xjc:2.2.11.jbossorg-1" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.glassfish.jaxb:jaxb-core:2.2.11.jbossorg-1" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.jboss.spec.javax.xml.bind:jboss-jaxb-api_2.2_spec:1.0.4.Final" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.jboss.spec.javax.xml.soap:jboss-saaj-api_1.3_spec:1.0.3.Final" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.jboss.spec.javax.jms:jboss-jms-api_1.1_spec:1.0.1.Final" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.jboss.spec.javax.jms:jboss-jms-api_2.0_spec:1.0.0.Final" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.jboss.spec.javax.security.jacc:jboss-jacc-api_1.5_spec:1.0.0.Final" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.jboss.logging:jboss-logging:3.2.1.Final" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: javax.enterprise:cdi-api:1.2" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: javax.el:javax.el-api:3.0.0" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: javax.interceptor:javax.interceptor-api:1.2" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: javax.inject:javax.inject:1" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.shiro:shiro-ehcache:1.3.2" level="project" />
-    <orderEntry type="library" name="Maven: net.sf.ehcache:ehcache-core:2.5.3" level="project" />
-    <orderEntry type="library" name="Maven: net.sf.ehcache:ehcache:2.10.1" level="project" />
-    <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.7" level="project" />
     <orderEntry type="library" name="Maven: org.apache.shiro:shiro-servlet-plugin:1.4.0-RC2" level="project" />
     <orderEntry type="library" name="Maven: org.apache.shiro:shiro-web:1.4.0-RC2" level="project" />
     <orderEntry type="library" name="Maven: org.apache.shiro:shiro-jaxrs:1.4.0-RC2" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.shiro:shiro-core:1.4.0-RC2" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.shiro:shiro-lang:1.4.0-RC2" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.shiro:shiro-cache:1.4.0-RC2" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.shiro:shiro-crypto-hash:1.4.0-RC2" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.shiro:shiro-crypto-core:1.4.0-RC2" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.shiro:shiro-crypto-cipher:1.4.0-RC2" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.shiro:shiro-config-core:1.4.0-RC2" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.shiro:shiro-config-ogdl:1.4.0-RC2" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.shiro:shiro-event:1.4.0-RC2" level="project" />
     <orderEntry type="library" name="Maven: javax.ws.rs:javax.ws.rs-api:2.0.1" level="project" />
     <orderEntry type="library" name="Maven: de.svenkubiak:jBCrypt:0.4" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.jboss.spec.javax.faces:jboss-jsf-api_2.2_spec:2.2.8" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.hibernate.javax.persistence:hibernate-jpa-2.1-api:1.0.0.Final" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.hibernate:hibernate-validator:5.1.3.Final" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: javax.validation:validation-api:1.1.0.Final" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.jboss.logging:jboss-logging:3.1.3.GA" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: com.fasterxml:classmate:1.0.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: junit:junit:4.11" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.hamcrest:hamcrest-core:1.3" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.jboss.arquillian.junit:arquillian-junit-container:1.1.2.Final-wildfly-1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.jboss.arquillian.junit:arquillian-junit-core:1.1.2.Final-wildfly-1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.jboss.arquillian.test:arquillian-test-api:1.1.2.Final-wildfly-1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.jboss.arquillian.core:arquillian-core-api:1.1.2.Final-wildfly-1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.jboss.arquillian.test:arquillian-test-spi:1.1.2.Final-wildfly-1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.jboss.arquillian.container:arquillian-container-test-api:1.1.2.Final-wildfly-1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.jboss.shrinkwrap:shrinkwrap-api:1.1.2" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.jboss.arquillian.container:arquillian-container-test-spi:1.1.2.Final-wildfly-1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.jboss.arquillian.core:arquillian-core-impl-base:1.1.2.Final-wildfly-1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.jboss.arquillian.test:arquillian-test-impl-base:1.1.2.Final-wildfly-1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.jboss.arquillian.container:arquillian-container-impl-base:1.1.2.Final-wildfly-1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.jboss.arquillian.config:arquillian-config-api:1.1.2.Final-wildfly-1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.jboss.arquillian.config:arquillian-config-impl-base:1.1.2.Final-wildfly-1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.jboss.arquillian.container:arquillian-container-test-impl-base:1.1.2.Final-wildfly-1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.jboss.shrinkwrap:shrinkwrap-impl-base:1.1.2" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.jboss.shrinkwrap:shrinkwrap-spi:1.1.2" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.jboss.arquillian.protocol:arquillian-protocol-servlet:1.1.2.Final-wildfly-1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.jboss.arquillian.container:arquillian-container-spi:1.1.2.Final-wildfly-1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.jboss.shrinkwrap.descriptors:shrinkwrap-descriptors-api-base:2.0.0-alpha-3" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.jboss.shrinkwrap.descriptors:shrinkwrap-descriptors-spi:2.0.0-alpha-3" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.jboss.arquillian.extension:arquillian-rest-client-impl-jersey:1.0.0.Alpha4" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.jboss.arquillian.extension:arquillian-rest-client-api:1.0.0.Alpha4" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.jboss.arquillian.extension:arquillian-rest-client-impl-base:1.0.0.Alpha4" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: javassist:javassist:3.12.1.GA" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.glassfish.jersey.core:jersey-client:2.8" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.glassfish.jersey.core:jersey-common:2.8" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: javax.annotation:javax.annotation-api:1.2" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.glassfish.jersey.bundles.repackaged:jersey-guava:2.8" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.glassfish.hk2:osgi-resource-locator:1.0.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.glassfish.hk2:hk2-api:2.2.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.glassfish.hk2:hk2-utils:2.2.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.glassfish.hk2.external:aopalliance-repackaged:2.2.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.glassfish.hk2.external:javax.inject:2.2.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.glassfish.hk2:hk2-locator:2.2.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.javassist:javassist:3.18.1-GA" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.glassfish.jersey.ext:jersey-proxy-client:2.6" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.jboss.arquillian.core:arquillian-core-spi:1.1.2.Final-wildfly-1" level="project" />
   </component>
 </module>

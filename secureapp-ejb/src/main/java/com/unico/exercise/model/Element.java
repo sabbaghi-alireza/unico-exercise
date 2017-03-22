@@ -14,6 +14,14 @@ public class Element implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
+    public Element(Integer first, Integer second) {
+        this.first = first;
+        this.second = second;
+    }
+
+    public Element(){
+    }
+
     @Id
     @GeneratedValue
     private Long id;

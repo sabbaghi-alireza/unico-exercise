@@ -88,14 +88,28 @@
         <dependency> <!-- Always make sure jbossws-cxf-factories dependency is explicitly declared before anything transitively pulling CXF -->
             <groupId>org.jboss.ws.cxf</groupId>
             <artifactId>jbossws-cxf-factories</artifactId>
-            <version>5.1.5.Final</version>
+            <version>5.1.7.Final</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>org.jboss.ws.cxf</groupId>
             <artifactId>jbossws-cxf-server</artifactId>
-            <version>5.1.5.Final</version>
+            <version>5.1.7.Final</version>
             <scope>provided</scope>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.glassfish.jaxb</groupId>
+                    <artifactId>jaxb-runtime</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.glassfish.jaxb</groupId>
+                    <artifactId>jaxb-xjc</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.glassfish.jaxb</groupId>
+                    <artifactId>jaxb-core</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
 
         <!-- Import the CDI API, we use provided scope as the API is included in JBoss WildFly -->
@@ -105,23 +119,17 @@
             <scope>provided</scope>
         </dependency>
 
-        <!--<dependency>-->
-        <!--<groupId>org.apache.shiro</groupId>-->
-        <!--<artifactId>shiro-web</artifactId>-->
-        <!--<version>1.3.2</version>-->
-        <!--</dependency>-->
-
         <!-- EhCache Dependencies -->
-        <dependency>
-            <groupId>org.apache.shiro</groupId>
-            <artifactId>shiro-ehcache</artifactId>
-            <version>1.3.2</version>
-        </dependency>
-        <dependency>
-            <groupId>net.sf.ehcache</groupId>
-            <artifactId>ehcache</artifactId>
-            <version>2.10.1</version>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>org.apache.shiro</groupId>-->
+            <!--<artifactId>shiro-ehcache</artifactId>-->
+            <!--<version>1.3.2</version>-->
+        <!--</dependency>-->
+        <!--<dependency>-->
+            <!--<groupId>net.sf.ehcache</groupId>-->
+            <!--<artifactId>ehcache</artifactId>-->
+            <!--<version>2.10.1</version>-->
+        <!--</dependency>-->
 
         <dependency>
             <groupId>org.apache.shiro</groupId>
@@ -139,13 +147,6 @@
             <groupId>de.svenkubiak</groupId>
             <artifactId>jBCrypt</artifactId>
             <version>0.4</version>
-        </dependency>
-
-        <!-- Import the JSF API, we use provided scope as the API is included in JBoss WildFly -->
-        <dependency>
-            <groupId>org.jboss.spec.javax.faces</groupId>
-            <artifactId>jboss-jsf-api_2.2_spec</artifactId>
-            <scope>provided</scope>
         </dependency>
 
         <!-- Import the JPA API, we use provided scope as the API is included in JBoss WildFly -->
@@ -168,6 +169,34 @@
                     <artifactId>slf4j-api</artifactId>
                 </exclusion>
             </exclusions>
+        </dependency>
+
+        <!-- Test scope dependencies -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- Optional, but highly recommended -->
+        <!-- Arquillian allows you to test enterprise code such as EJBs and
+            Transactional(JTA) JPA from JUnit/TestNG -->
+        <dependency>
+            <groupId>org.jboss.arquillian.junit</groupId>
+            <artifactId>arquillian-junit-container</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.jboss.arquillian.protocol</groupId>
+            <artifactId>arquillian-protocol-servlet</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.jboss.arquillian.extension</groupId>
+            <artifactId>arquillian-rest-client-impl-jersey</artifactId>
+            <version>1.0.0.Alpha4</version>
+            <scope>test</scope>
         </dependency>
 
     </dependencies>

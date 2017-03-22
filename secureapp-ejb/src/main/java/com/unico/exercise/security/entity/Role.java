@@ -6,7 +6,8 @@ import java.util.Objects;
 
 @Entity
 @NamedQueries({
-        @NamedQuery(name = "Role.findAll", query = "SELECT r FROM Role r")
+        @NamedQuery(name = "Role.findAll", query = "SELECT r FROM Role r"),
+        @NamedQuery(name = "Role.findByName", query = "SELECT r FROM Role r WHERE r.name = :name")
 })
 public class Role implements Serializable {
 

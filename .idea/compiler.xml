@@ -12,11 +12,11 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="secureapp" target="1.7" />
-      <module name="secureapp-ear" target="1.7" />
-      <module name="secureapp-ejb" target="1.7" />
+      <module name="secureapp" target="1.8" />
+      <module name="secureapp-ear" target="1.8" />
+      <module name="secureapp-ejb" target="1.8" />
       <module name="secureapp-security" target="1.7" />
-      <module name="secureapp-web" target="1.7" />
+      <module name="secureapp-web" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

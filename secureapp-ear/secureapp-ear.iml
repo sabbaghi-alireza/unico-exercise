@@ -9,7 +9,7 @@
       </configuration>
     </facet>
   </component>
-  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_7" inherit-compiler-output="false">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8" inherit-compiler-output="false">
     <output url="file://$MODULE_DIR$/target/classes" />
     <output-test url="file://$MODULE_DIR$/target/test-classes" />
     <content url="file://$MODULE_DIR$">
@@ -19,17 +19,6 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="secureapp-web" />
     <orderEntry type="module" module-name="secureapp-ejb" />
-    <orderEntry type="library" name="Maven: org.apache.shiro:shiro-core:1.4.0-RC2" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.shiro:shiro-lang:1.4.0-RC2" level="project" />
-    <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.21" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.shiro:shiro-cache:1.4.0-RC2" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.shiro:shiro-crypto-hash:1.4.0-RC2" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.shiro:shiro-crypto-core:1.4.0-RC2" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.shiro:shiro-crypto-cipher:1.4.0-RC2" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.shiro:shiro-config-core:1.4.0-RC2" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.shiro:shiro-config-ogdl:1.4.0-RC2" level="project" />
-    <orderEntry type="library" name="Maven: commons-beanutils:commons-beanutils:1.9.3" level="project" />
-    <orderEntry type="library" name="Maven: commons-collections:commons-collections:3.2.2" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.shiro:shiro-event:1.4.0-RC2" level="project" />
+    <orderEntry type="library" name="Maven: de.svenkubiak:jBCrypt:0.4" level="project" />
   </component>
 </module>
