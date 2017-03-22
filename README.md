@@ -75,12 +75,15 @@ Access the application
 
 The application will be running at the following URL: <http://localhost:8080/secureapp-web>.
 
-1. The Rest Endpoint is: http://localhost:8080/secureapp-web/rest/elements
-    a) for pushing data:      send POST with json object like {"first":10, "second":20} using http basic authentication (user1/pass1) to (user20/pass20)
-    b) for view list of data: send GET using http basic authentication (user1/pass1) to (user20/pass20)
+1. The Rest Endpoint address: http://localhost:8080/secureapp-web/rest/elements
 
-2. The Soap Endpoint is: http://localhost:8080/secureapp-web/soap/ElementSoapService
-    ***This service is secured using WS-Security UsernameToken authentication: (user1/pass1) to (user20/pass20)
+    1.1. for pushing data:      send POST with json object like {"first":10, "second":20} using http basic authentication (user1/pass1) to (user20/pass20)
+
+    1.2. for view list of data: send GET using http basic authentication (user1/pass1) to (user20/pass20)
+
+2. The Soap Endpoint address: http://localhost:8080/secureapp-web/soap/ElementSoapService
+    
+    2.1. This service is secured using WS-Security UsernameToken authentication: (user1/pass1) to (user20/pass20)
 
 Undeploy the Archive
 --------------------
