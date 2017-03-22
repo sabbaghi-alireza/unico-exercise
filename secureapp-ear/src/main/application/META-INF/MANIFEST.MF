@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.7.1
+Created-By: 17.0-b16 (Sun Microsystems Inc.)
+Dependencies: org.apache.ws.security export, org.apache.cxf export, org.jboss.ws.common export, org.apache.cxf.ws-security export

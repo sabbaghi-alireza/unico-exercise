@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="ear" name="secureapp-ear:ear">
+    <output-path>$PROJECT_DIR$/secureapp-ear/target</output-path>
+    <root id="archive" name="secureapp-ear.ear">
+      <element id="artifact" artifact-name="secureapp-ear:ear exploded" />
+    </root>
+  </artifact>
+</component>

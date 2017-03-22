@@ -1,0 +1,32 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-ear" name="secureapp-ear:ear exploded">
+    <output-path>$PROJECT_DIR$/secureapp-ear/target/secureapp-ear</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="secureapp-ear/javaeeApplication/JavaEE" />
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/secureapp-ear/target/secureapp-ear/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="dir-copy" path="$PROJECT_DIR$/secureapp-ear/src/main/application" />
+      <element id="archive" name="secureapp-web.war">
+        <element id="artifact" artifact-name="secureapp-web:war exploded" />
+      </element>
+      <element id="archive" name="secureapp-ejb.jar">
+        <element id="artifact" artifact-name="secureapp-ejb:ejb exploded" />
+      </element>
+      <element id="directory" name="lib">
+        <element id="file-copy" path="$MAVEN_REPOSITORY$/org/apache/shiro/shiro-core/1.4.0-RC2/shiro-core-1.4.0-RC2.jar" output-file-name="shiro-core.jar" />
+        <element id="file-copy" path="$MAVEN_REPOSITORY$/org/apache/shiro/shiro-lang/1.4.0-RC2/shiro-lang-1.4.0-RC2.jar" output-file-name="shiro-lang.jar" />
+        <element id="file-copy" path="$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.7.21/slf4j-api-1.7.21.jar" output-file-name="slf4j-api.jar" />
+        <element id="file-copy" path="$MAVEN_REPOSITORY$/org/apache/shiro/shiro-cache/1.4.0-RC2/shiro-cache-1.4.0-RC2.jar" output-file-name="shiro-cache.jar" />
+        <element id="file-copy" path="$MAVEN_REPOSITORY$/org/apache/shiro/shiro-crypto-hash/1.4.0-RC2/shiro-crypto-hash-1.4.0-RC2.jar" output-file-name="shiro-crypto-hash.jar" />
+        <element id="file-copy" path="$MAVEN_REPOSITORY$/org/apache/shiro/shiro-crypto-core/1.4.0-RC2/shiro-crypto-core-1.4.0-RC2.jar" output-file-name="shiro-crypto-core.jar" />
+        <element id="file-copy" path="$MAVEN_REPOSITORY$/org/apache/shiro/shiro-crypto-cipher/1.4.0-RC2/shiro-crypto-cipher-1.4.0-RC2.jar" output-file-name="shiro-crypto-cipher.jar" />
+        <element id="file-copy" path="$MAVEN_REPOSITORY$/org/apache/shiro/shiro-config-core/1.4.0-RC2/shiro-config-core-1.4.0-RC2.jar" output-file-name="shiro-config-core.jar" />
+        <element id="file-copy" path="$MAVEN_REPOSITORY$/org/apache/shiro/shiro-config-ogdl/1.4.0-RC2/shiro-config-ogdl-1.4.0-RC2.jar" output-file-name="shiro-config-ogdl.jar" />
+        <element id="file-copy" path="$MAVEN_REPOSITORY$/commons-beanutils/commons-beanutils/1.9.3/commons-beanutils-1.9.3.jar" output-file-name="commons-beanutils.jar" />
+        <element id="file-copy" path="$MAVEN_REPOSITORY$/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar" output-file-name="commons-collections.jar" />
+        <element id="file-copy" path="$MAVEN_REPOSITORY$/org/apache/shiro/shiro-event/1.4.0-RC2/shiro-event-1.4.0-RC2.jar" output-file-name="shiro-event.jar" />
+      </element>
+    </root>
+  </artifact>
+</component>

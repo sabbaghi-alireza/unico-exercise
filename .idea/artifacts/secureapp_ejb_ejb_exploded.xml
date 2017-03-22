@@ -1,0 +1,12 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-ejb" name="secureapp-ejb:ejb exploded">
+    <output-path>$PROJECT_DIR$/secureapp-ejb/target/secureapp-ejb</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="secureapp-ejb/ejb/EJB" />
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/secureapp-ejb/target/secureapp-ejb/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="module-output" name="secureapp-ejb" />
+    </root>
+  </artifact>
+</component>
