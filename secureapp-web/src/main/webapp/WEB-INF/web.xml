@@ -6,12 +6,12 @@
          version="3.1">
 
     <servlet>
-        <servlet-name>JavaFirstTestService</servlet-name>
+        <servlet-name>ElementSoapService</servlet-name>
         <servlet-class>com.unico.exercise.soap.ElementSoapServiceImpl</servlet-class>
     </servlet>
 
     <servlet-mapping>
-        <servlet-name>JavaFirstTestService</servlet-name>
+        <servlet-name>ElementSoapService</servlet-name>
         <url-pattern>/soap/ElementSoapService</url-pattern>
     </servlet-mapping>
 

@@ -5,14 +5,17 @@ import com.unico.exercise.security.entity.User;
 import org.mindrot.jbcrypt.BCrypt;
 
 import javax.annotation.PostConstruct;
-import javax.ejb.Stateless;
+import javax.annotation.PreDestroy;
+import javax.ejb.Singleton;
+import javax.ejb.Startup;
 import javax.inject.Inject;
 
 /**
  * Created by Alireza on 3/23/2017.
  */
-@Stateless
-public class DummyUserGenerator {
+@Singleton
+@Startup
+public class DataGenerator {
 
     @Inject
     UserService userService;
@@ -21,7 +24,7 @@ public class DummyUserGenerator {
     RoleService roleService;
 
     @PostConstruct
-    public void createUsers() {
+    public void startup() {
         Role adminRole = getOrSaveRole("ADMIN");
         for (int i = 1; i <= 20; i++) {
             String username = "user" + i;
@@ -45,5 +48,10 @@ public class DummyUserGenerator {
             roleService.save(dbRole);
         }
         return dbRole;
+    }
+
+    @PreDestroy
+    void atShutdown() {
+        System.out.println("shutdown");
     }
 }
