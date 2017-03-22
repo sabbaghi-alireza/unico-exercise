@@ -5,15 +5,13 @@ import com.unico.exercise.security.entity.User;
 import org.mindrot.jbcrypt.BCrypt;
 
 import javax.annotation.PostConstruct;
-import javax.ejb.Startup;
+import javax.ejb.Stateless;
 import javax.inject.Inject;
-import javax.inject.Singleton;
 
 /**
  * Created by Alireza on 3/23/2017.
  */
-@Singleton
-@Startup
+@Stateless
 public class DummyUserGenerator {
 
     @Inject
