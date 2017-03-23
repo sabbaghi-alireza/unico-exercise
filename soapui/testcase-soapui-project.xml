@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="2291fcfb-5843-41c1-a7be-cc91d7124007" activeEnvironment="Default" name="testcase" resourceRoot="" soapui-version="5.3.0" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="af3961e8-5cf5-480a-acff-0705d29af173" wsaVersion="NONE" name="ElementSoapServiceSoapBinding" type="wsdl" bindingName="{http://soap.exercise.unico.com/ws-extensions/wssecuritypolicy}ElementSoapServiceSoapBinding" soapVersion="1_1" anonymous="optional" definition="http://localhost:8080/secureapp-web/soap/ElementSoapService?wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://localhost:8080/secureapp-web/soap/ElementSoapService?wsdl"><con:part><con:url>http://localhost:8080/secureapp-web/soap/ElementSoapService?wsdl</con:url><con:content><![CDATA[<wsdl:definitions name="ElementSoapService" targetNamespace="http://soap.exercise.unico.com/ws-extensions/wssecuritypolicy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://soap.exercise.unico.com/ws-extensions/wssecuritypolicy" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:ns1="http://schemas.xmlsoap.org/soap/http">
+  <wsdl:types>
+    <xs:schema elementFormDefault="unqualified" targetNamespace="http://soap.exercise.unico.com/ws-extensions/wssecuritypolicy" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="gcd" type="tns:gcd"/>
+      <xs:element name="gcdList" type="tns:gcdList"/>
+      <xs:element name="gcdListResponse" type="tns:gcdListResponse"/>
+      <xs:element name="gcdResponse" type="tns:gcdResponse"/>
+      <xs:element name="gcdSum" type="tns:gcdSum"/>
+      <xs:element name="gcdSumResponse" type="tns:gcdSumResponse"/>
+      <xs:complexType name="gcdSum">
+        <xs:sequence/>
+      </xs:complexType>
+      <xs:complexType name="gcdSumResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="gcd-sum-Result" type="xs:int"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="gcd">
+        <xs:sequence/>
+      </xs:complexType>
+      <xs:complexType name="gcdResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="gcd-Result" type="xs:int"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="gcdList">
+        <xs:sequence/>
+      </xs:complexType>
+      <xs:complexType name="gcdListResponse">
+        <xs:sequence>
+          <xs:element maxOccurs="unbounded" minOccurs="0" name="gcd-list-Result" type="xs:int"/>
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="gcdResponse">
+    <wsdl:part element="tns:gcdResponse" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="gcd">
+    <wsdl:part element="tns:gcd" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="gcdSum">
+    <wsdl:part element="tns:gcdSum" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="gcdList">
+    <wsdl:part element="tns:gcdList" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="gcdListResponse">
+    <wsdl:part element="tns:gcdListResponse" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="gcdSumResponse">
+    <wsdl:part element="tns:gcdSumResponse" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="ElementSoapService">
+    <wsdl:operation name="gcdSum">
+      <wsdl:input message="tns:gcdSum" name="gcdSum"></wsdl:input>
+      <wsdl:output message="tns:gcdSumResponse" name="gcdSumResponse"></wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="gcd">
+      <wsdl:input message="tns:gcd" name="gcd"></wsdl:input>
+      <wsdl:output message="tns:gcdResponse" name="gcdResponse"></wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="gcdList">
+      <wsdl:input message="tns:gcdList" name="gcdList"></wsdl:input>
+      <wsdl:output message="tns:gcdListResponse" name="gcdListResponse"></wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ElementSoapServiceSoapBinding" type="tns:ElementSoapService">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsp:PolicyReference URI="#JavaFirstSecurityServiceUsernameUnsecureTransportPolicy"/>
+    <wsdl:operation name="gcdSum">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="gcdSum">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="gcdSumResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="gcd">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="gcd">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="gcdResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="gcdList">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="gcdList">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="gcdListResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ElementSoapService">
+    <wsdl:port binding="tns:ElementSoapServiceSoapBinding" name="ElementSoapServicePort">
+      <soap:address location="http://localhost:8080/secureapp-web/soap/ElementSoapService"/>
+    </wsdl:port>
+  </wsdl:service>
+  <wsp:Policy wsu:Id="JavaFirstSecurityServiceUsernameUnsecureTransportPolicy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <sp:SupportingTokens xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:UsernameToken sp:IncludeToken="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy/IncludeToken/AlwaysToRecipient">
+              <wsp:Policy>
+                <sp:WssUsernameToken10/>
+              </wsp:Policy>
+            </sp:UsernameToken>
+          </wsp:Policy>
+        </sp:SupportingTokens>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://localhost:8080/secureapp-web/soap/ElementSoapService</con:endpoint></con:endpoints><con:operation id="5e8ac3b2-b49d-4602-82bc-24ee34e5ce64" isOneWay="false" action="" name="gcd" bindingOperationName="gcd" type="Request-Response" outputName="gcdResponse" inputName="gcd" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="7758fc3a-28b8-4bdf-a6eb-67ac1d99f0d9" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8080/secureapp-web/soap/ElementSoapService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:wss="http://soap.exercise.unico.com/ws-extensions/wssecuritypolicy">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <wss:gcd/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://soap.exercise.unico.com/ws-extensions/wssecuritypolicy/ElementSoapService/gcd"/></con:call></con:operation><con:operation id="a586d6df-78ae-460a-b972-97ae3c1b517d" isOneWay="false" action="" name="gcdList" bindingOperationName="gcdList" type="Request-Response" outputName="gcdListResponse" inputName="gcdList" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="89e5c6a9-cbf3-4744-836c-824e8b16b97d" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8080/secureapp-web/soap/ElementSoapService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:wss="http://soap.exercise.unico.com/ws-extensions/wssecuritypolicy">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <wss:gcdList/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://soap.exercise.unico.com/ws-extensions/wssecuritypolicy/ElementSoapService/gcdList"/></con:call></con:operation><con:operation id="f56c0c5d-37b4-4388-8d99-e5c5e9fc1b3e" isOneWay="false" action="" name="gcdSum" bindingOperationName="gcdSum" type="Request-Response" outputName="gcdSumResponse" inputName="gcdSum" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="81789d9b-a737-4c2c-a5a1-9a3caf1b2f1b" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8080/secureapp-web/soap/ElementSoapService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:wss="http://soap.exercise.unico.com/ws-extensions/wssecuritypolicy">
+   <soapenv:Header><wsse:Security xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"><wsse:UsernameToken wsu:Id="UsernameToken-E6DB49E6E47C8A8E0214902272520861"><wsse:Username>user1</wsse:Username><wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">pass1</wsse:Password><wsse:Nonce EncodingType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0#Base64Binary">RsCJOsUAjzfhqfsXoy2GCw==</wsse:Nonce><wsu:Created>2017-03-23T00:00:52.083Z</wsu:Created></wsse:UsernameToken></wsse:Security></soapenv:Header>
+   <soapenv:Body>
+      <wss:gcdSum/>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://soap.exercise.unico.com/ws-extensions/wssecuritypolicy/ElementSoapService/gcdSum"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:properties/><con:wssContainer><con:outgoing><con:name>security</con:name><con:username>user1</con:username><con:password>pass1</con:password><con:entry type="Username"><con:configuration><addCreated>true</addCreated><addNonce>true</addNonce><passwordType>PasswordText</passwordType></con:configuration></con:entry></con:outgoing></con:wssContainer><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
